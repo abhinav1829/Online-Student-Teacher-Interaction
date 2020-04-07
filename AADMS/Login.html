@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="book.png">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <title>Login/Register</title>
+</head>
+
+<body>
+    <header>
+        <div id="menu_button_div">
+            <button id="menu_button" onclick="openNav()">&equiv;</button>
+        </div>
+        <div id="heading_div">
+            <h1>Login or Register</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="javascript:void(0)" onclick="closeNav()" id="menu_close">&times;</a>
+        <a href="Login.html">Login</a>
+        <a href="AskQ.html">Ask question</a>
+        <a href="Assignmarks.html">Assignment marks</a>
+        <a href="Studinfo.html">Student information</a>
+        <a href="Uploadassign.html">Upload assignment</a>
+    </nav>
+    <article>
+        <section id="login">
+            <h2 style="text-align:center">LOGIN</h2>
+            <form id="loginform" action="Validate" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            Username:
+                        </td>
+                        <td>
+                            <input type="email" name="username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password:
+                        </td>
+                        <td>
+                            <input type="password" name="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br><input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <input type="checkbox" name="remember_me" checked>
+                Remember me
+                <br>
+                <a href="blankpg.html">Forgot password?</a>
+            </form>
+        </section>
+        <section id="reg">
+            <h2 style="text-align:center">REGISTER</h2>
+            <form id="regform" action="Validate" method="post" onsubmit="validate_reg()">
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Roll:</td>
+                        <td><input type="number" name="roll" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td><input type="number" name="phone" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" name="pass1" required></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm password:</td>
+                        <td><input type="password" name="pass2" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br><input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </article>
+    <aside></aside>
+    <footer>
+        <p>&copy; 2019 Illuminati | Design and Development. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

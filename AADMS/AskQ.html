@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="book.png">
+    <link rel="stylesheet" href="askq.css">
+    <script src="askq.js"></script>
+    <title>Ask Question</title>
+</head>
+
+<body>
+    <header>
+        <div id="menu_button_div">
+            <button id="menu_button" onclick="openNav()">&equiv;</button>
+        </div>
+        <div id="heading_div">
+            <h1>Ask a question</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="javascript:void(0)" onclick="closeNav()" id="menu_close">&times;</a>
+        <a href="Login.html">Login</a>
+        <a href="AskQ.html">Ask question</a>
+        <a href="Assignmarks.html">Assignment marks</a>
+        <a href="Studinfo.html">Student information</a>
+        <a href="Uploadassign.html">Upload assignment</a>
+    </nav>
+    <article>
+        <section>
+            <form>
+                Subject:
+                <select>
+                    <option value="daa">DAA</option>
+                    <option value="spos">SPOS</option>
+                    <option value="esiot">ES&IOT</option>
+                    <option value="smd">SMD</option>
+                    <option value="wt">WT</option>
+                </select>
+                Teacher:
+                <select>
+                    <option value="t1">Teacher1</option>
+                    <option value="t2">Teacher2</option>
+                    <option value="t3">Teacher3</option>
+                </select>
+                <br><br>
+                <textarea id="textarea" rows="7" cols="70" placeholder="Type your question here"></textarea>
+                <br>
+                <input type="button" value="Add Image">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </article>
+    <aside>
+
+    </aside>
+    <footer>
+        <p>&copy; 2019 Illuminati | Design and Development. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

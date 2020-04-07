@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="icon" href="Resources/book.png">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<title>Student Info</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="CSS/si_style.css" />
+	<script type="text/javascript" src="JS/check.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<div class="wrapper">
+			<div id="menu_button_div">
+				<button id="menu_button" onclick="openNav()">&equiv;</button>
+			</div>
+			<div class="topnav">
+				<a href="page.html"><strong><em>Assignment And Doubt Management</em></strong></a>
+				<input type="text" id="search" placeholder="Search..." style="width: 100px"></input>
+				<input onclick="Search()" type="Submit" name="submit" value="Search"></input>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<a href="schedule_notice_teach.html">Notice and Schedule</a>
+		<a href="studinfo.html">Student Info</a>
+		<a href="solvedoubts.html">Solve Doubts</a>
+		<a href="Login.html">Logout</a>
+	</nav>
+
+	<div class="heading">
+		<div class="text-box">
+			<h1 class="heading-primary">
+				<span class="heading-primary-main">Student Info</span>
+				<span class="heading-primary-sub">Get to know the statistics of your students.</span>
+			</h1>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="form">
+	Year:
+            <select>
+                <option value="fe">First year</option>
+                <option value="se">Second year</option>
+                <option value="te">Third year</option>
+                <option value="be">Fourth year</option>
+            </select>
+            Division:
+            <input type="number" min="1" max="10">
+            Batch:
+            <input type="number" min="1" max="4"><br><br>
+            <table border="1">
+                <tr>
+                    <th>Roll</th>
+                    <th>Name</th>
+                    <th colspan="15">Marks</th>
+                </tr>
+                <tr>
+                    <td>3228</td>
+                    <td>Abhinav Dhoka</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>3238</td>
+                    <td>Yash Jaggi</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>9</td>
+                </tr>
+            </table>
+	</div>
+	<br>
+	<br>
+
+	<footer class="footer-distributed">
+		<div class="footer-left">
+			<h3>
+				Assignment And <span>Doubt Management</span>
+			</h3>
+			<br> <br>
+			<p class="footer-company-name">PICT &copy; 2019</p>
+		</div>
+
+		<div class="footer-center">
+			<div>
+				<i class="fa fa-map-marker"></i>
+				<p>
+					<span>Pict, Katraj</span> Pune, India
+				</p>
+			</div>
+			<div>
+				<i class="fa fa-phone"></i>
+				<p>020 1111 2222</p>
+			</div>
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p>
+					<a href="mailto:support@company.com">support@pict.com</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="footer-right">
+			<p class="footer-company-about">
+				<span>About the company</span> This is the place to verify all your
+				doubts, receive assignments and upload answers as well as stay
+				up-to-date with your college ctivities through news and schedule.
+			</p>
+			<div class="footer-icons">
+				<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a
+					href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-github"></i></a>
+			</div>
+		</div>
+
+	</footer>
+
+</body>
+
+</html>

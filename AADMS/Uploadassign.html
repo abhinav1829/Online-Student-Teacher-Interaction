@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="book.png">
+    <link rel="stylesheet" href="uploadassign.css">
+    <script src="uploadassign.js"></script>
+    <title>Upload assignment</title>
+</head>
+
+<body>
+    <header>
+        <div id="menu_button_div">
+            <button id="menu_button" onclick="openNav()">&equiv;</button>
+        </div>
+        <div id="heading_div">
+            <h1>Upload Assignment</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="javascript:void(0)" onclick="closeNav()" id="menu_close">&times;</a>
+        <a href="Login.html">Login</a>
+        <a href="AskQ.html">Ask question</a>
+        <a href="Assignmarks.html">Assignment marks</a>
+        <a href="Studinfo.html">Student information</a>
+        <a href="Uploadassign.html">Upload assignment</a>
+    </nav>
+    <article>
+        <section>
+            <form>
+                Subject:
+                <select>
+                    <option value="sposl">SPOSL</option>
+                    <option value="esiotl">ES&IOTL</option>
+                    <option value="wtl">WTL</option>
+                </select>
+                Assignment number:<input type="number" name="assgnno" min="1" max="15">
+                <br><br>
+                <textarea rows="7" cols="70" placeholder="Queries if any"></textarea><br>
+                <button id="uploadpdf">Upload PDF</button>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </article>
+    <aside>
+
+    </aside>
+    <footer>
+        <p>&copy; 2019 Illuminati | Design and Development. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

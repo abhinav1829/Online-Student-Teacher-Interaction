@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="book.png">
+    <link rel="stylesheet" href="studinfo.css">
+    <script src="studinfo.js"></script>
+    <title>Student Info</title>
+</head>
+
+<body>
+    <header>
+        <div id="menu_button_div">
+            <button id="menu_button" onclick="openNav()">&equiv;</button>
+        </div>
+        <div id="heading_div">
+            <h1>Student information</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="javascript:void(0)" onclick="closeNav()" id="menu_close">&times;</a>
+        <a href="Login.html">Login</a>
+        <a href="AskQ.html">Ask question</a>
+        <a href="Assignmarks.html">Assignment marks</a>
+        <a href="Studinfo.html">Student information</a>
+        <a href="Uploadassign.html">Upload assignment</a>
+    </nav>
+    <article>
+        <section>
+            Year:
+            <select>
+                <option value="fe">First year</option>
+                <option value="se">Second year</option>
+                <option value="te">Third year</option>
+                <option value="be">Fourth year</option>
+            </select>
+            Division:
+            <input type="number" min="1" max="10">
+            Batch:
+            <input type="number" min="1" max="4"><br><br>
+            <table border="1">
+                <tr>
+                    <th>Roll</th>
+                    <th>Name</th>
+                    <th colspan="15">Marks</th>
+                </tr>
+                <tr>
+                    <td>3228</td>
+                    <td>Abhinav Dhoka</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>3238</td>
+                    <td>Yash Jaggi</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </section>
+    </article>
+    <aside>
+
+    </aside>
+    <footer>
+        <p>&copy; 2019 Illuminati | Design and Development. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
